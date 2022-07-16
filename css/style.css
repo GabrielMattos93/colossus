@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+ .modal-sheet .modal-dialog {
+    width: 380px;
+    transition: bottom .75s ease-in-out;
+  }
+  .modal-sheet .modal-footer {
+    padding-bottom: 2rem;
+  }
+  
+  .modal-alert .modal-dialog {
+    width: 380px;
+  }
+  
+  .modal-tour .modal-dialog {
+    width: 380px;
+  }
+  .btn-primary{
+    background-color: #5b4f96;
+    border: #5b4f96;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    padding-bottom: 15px;
+  }
