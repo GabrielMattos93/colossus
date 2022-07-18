@@ -69,13 +69,10 @@ if (($result_ponto) and ($result_ponto->rowCount() != 0)) {
         // Tipo de registro
         $tipo_registro = "editar";
 
-        // Texto parcial que deve ser apresentado para o usuario
         $text_tipo_registro = "saída";
-    } else { // Criar novo registro no BD com o horrario de entrada
-        // Tipo de registro
+    } else { 
         $tipo_registro = "entrada";
-
-        // Texto parcial que deve ser apresentado para o usuario
+        
         $text_tipo_registro = "entrada";
     }
 } else {
@@ -119,7 +116,7 @@ switch ($tipo_registro) {
 // Executar a QUERY
 $cad_horario->execute();
 
-// Acessa o IF quando cadastrar com sucesso
+
 if ($cad_horario->rowCount()) {
     $_SESSION['msg'] = "<p style='color: green;'>Horário de $text_tipo_registro cadastrado com sucesso!</p>";
     header("Location: index.php");
